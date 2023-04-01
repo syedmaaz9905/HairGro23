@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Oregain - HairGrow</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon-oregain.webp">
+	<meta name="description" content="" />
+	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- WEB FONTS : use %7C instead of | (pipe) -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+		rel="stylesheet" type="text/css" />
+
+	<!-- Font Awesome - Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CORE CSS -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- THEME CSS -->
+	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+	<!-- CUSTOM CSS -->
+	<link href="./custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+
+<body class="smoothscroll enable-animation">
+
+	<!-- SLIDE TOP -->
+	<!-- <div id="slidetop">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+						sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et,
+						iaculis ac massa. </p>
+				</div>
+
+				<div class="col-md-4">
+					<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very
+								very very very very very very very very </a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit
+								amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur
+								adipiscing elit</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+					<ul class="list-unstyled">
+						<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+						<li><b>Phone:</b> 1-800-565-2390</li>
+						<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+		<a class="slidetop-toggle" href="#">
+			
+		</a>
+
+	</div> -->
+	<!-- /SLIDE TOP -->
+
+
+	<!-- wrapper -->
+	<div id="wrapper">
+
+		<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+		<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+			<!-- TOP NAV -->
+			<header id="topNav">
+				<div class="container">
+
+					<!-- Mobile Menu Button -->
+					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<!-- Logo -->
+					<a class="logo float-left" href="index.html">
+						<img src="assets/images/_smarty/logo-oregain-dark.png" alt="" />
+					</a>
+
+					<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+					<div class="navbar-collapse collapse float-right nav-main-collapse">
+						<nav class="nav-main">
+
+							<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+							<ul id="topMain" class="nav nav-pills nav-main">
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn active">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="index.html">
+										HOME
+									</a>
+								</li>
+
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="page-haircare-basics.html">
+										HAIRCARE BASICS
+									</a>
+								</li>
+
+								<li class="dropdown">
+									<!-- FEATURES -->
+									<a class="dropdown-toggle" href="#">
+										OREGAIN
+									</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown">
+											<a class="" href="page-our-story.html">
+												<i class="fa-regular fa-gem"></i> OUR STORY
+											</a>
+										</li>
+										<li class="dropdown">
+											<a class="" href="page-about-us.html">
+												<i class="fa-solid fa-bottle-droplet"></i> ABOUT HAIRGROW23
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="page-contact.html">
+										CONTACT US
+									</a>
+								</li>
+
+								<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+
+							</ul>
+
+						</nav>
+					</div>
+
+				</div>
+			</header>
+			<!-- /Top Nav -->
+
+		</div>
+
+
+		<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+		<section class="page-header">
+			<div class="container">
+
+				<h1><b>HAIRCARE BASICS</b></h1>
+
+				<!-- breadcrumbs -->
+				<!-- <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Pages</a></li>
+					<li class="active">Team</li>
+				</ol> -->
+				<!-- /breadcrumbs -->
+
+			</div>
+		</section>
+		<!-- /PAGE HEADER -->
+
+		<!-- -->
+		<section>
+			<div class="container">
+
+				<h1 class="">HAIR FALL PROBLEMS</h1>
+				<p><b>Hair fall is one of the most common health concern in today’s times. Your hair is susceptible to
+						damage by pollutants during daily travel, irregular food habits, dirt accumulation in the scalp
+						and
+						dandruff. Proper cleaning has therefore become an essential element in hair care.
+						<br><br>
+						Shampoos get rid of the dirt or soil in the hair by using a blend of ingredients called
+						surfactants
+						which bind with the dirt and can be easily removed when you wash with water. Shampoos also
+						contain
+						purpose-based ingredients like thickeners, emulsifiers, foaming boosters, scents, and color
+						additives. It is often easy to guess the ingredients in a shampoo by reading the advertising
+						claims
+						on the label.
+					</b></p>
+
+				<hr class="mt-80" />
+
+				<!-- TIMELINE -->
+				<section>
+					<div class="container">
+						<h1 class="">THINGS TO LOOK FOR WHEN CHOOSING A SHAMPOO:</h1>
+						<!-- 
+						TIMELINE CENTER
+					
+						AVAILABLE CLASSES:
+							.timeline-desc-line = add text line
+					-->
+						<ul class="timeline_center list-unstyled">
+							<li>
+								<h3>
+									<span style="font-size: 30px;">1.</span>
+									Harmful Chemicals
+								</h3>
+								<div class="timeline-desc timeline-desc-line" style="font-style: bold;"><b>(a).
+										Parabens: </b> Parabens which are
+									used as
+									preservatives in shampoos contain estrogens which lead to hair loss.<br><b>(b).
+										Sulfates: </b> Sulfates are surfactants used in many cleaning and hygiene
+									products can
+									cause hair fall. Sulfates are aggressive detergents made of sulfur-containing
+									mineral salts. The most common are Sodium Lauryl Sulfate (SLS) and Sodium Laureth
+									Sulfate (SLES). Sulfates are powerful, cheap and everywhere – not just in lathering
+									shampoos, body washes, face cleansers, and toothpastes, but also in household
+									cleaners, laundry detergents, and dish soaps. The problem in shampoo? By stripping
+									all the protective oils from your scalp and hair, sulfates overshoot the mark. They
+									are too aggressive.<br><b>(c). Sodium Chloride: </b>Hair damage can also be due to
+									sodium chloride (better known as table salt) in your shampoos. Sodium chloride is
+									used as a thickener and is the major reason for dry and itchy scalp.<br><b>(d).
+										Urea: </b>Urea is used to slow moisture loss from a product during use, to
+									extend
+									shelf-life, and to maintain pH. Urea also helps soften hair keratin to facilitate
+									specific actions (coloring, styling). However, Urea can release formaldehyde, that
+									damages hair follicles and induce hair loss.</div>
+								<!-- <a href="portfolio-single-parallax.html" class="btn btn-sm btn-default mt-20">read
+									more</a> -->
+							</li>
+
+							<li>
+								<h3>
+									<span style="font-size: 30px;">2.</span>
+									Volumizers
+								</h3>
+								<div class="timeline-desc timeline-desc-line">There lies a big difference between a
+									shampoo that actually helps to grow hair and one that contains volumizers to just
+									give a thick look. It is better to avoid volumizing shampoos as they can eventually
+									speed up hair loss.</div>
+								<!-- <a href="portfolio-single-parallax.html" class="btn btn-sm btn-default mt-20">read
+									more</a> -->
+							</li>
+
+							<li>
+								<h3>
+									<span style="font-size: 30px;">3.</span>
+									DHT Blockers
+								</h3>
+								<div class="timeline-desc timeline-desc-line">It is widely accepted that a major cause
+									of pattern baldness in men and hair loss in women is DHT (Dihydrotestosterone). DHT
+									damages the hair follicles.<br>
+									Look out for shampoos with DHT blockers. Herbal shampoos which contain vitamins to
+									form a natural DHT blocker can help to reduce short pattern baldness and improve
+									hair growth.</div>
+								<!-- <a href="portfolio-single-parallax.html" class="btn btn-sm btn-default mt-20">read
+									more</a> -->
+							</li>
+
+							<li>
+								<h3>
+									<span style="font-size: 30px;">4.</span>
+									Cayenne
+								</h3>
+								<div class="timeline-desc timeline-desc-line">Cayenne is a powerful hair loss fighting
+									ingredient. Look for this ingredient when choosing a shampoo.<br>
+									Cayenne pepper has many medical and hair growth applications. It causes stimulation
+									of the scalp by drawing blood to it and increasing the overall circulation.</div>
+								<!-- <a href="portfolio-single-parallax.html" class="btn btn-sm btn-default mt-20">read
+									more</a> -->
+							</li>
+
+							<li>
+								<h3>
+									<span style="font-size: 30px;">5.</span>
+									Argan Oil
+								</h3>
+								<div class="timeline-desc timeline-desc-line">If your hair cleaning product contains
+									Argan oil, you have already made a good choice.<br>
+									Argan oil prevents the shrinking of hair follicles and promotes hair growth in both
+									men and women. It also acts as a moisturizer and fights dandruff.</div>
+								<!-- <a href="portfolio-single-parallax.html" class="btn btn-sm btn-default mt-20">read
+									more</a> -->
+							</li>
+
+							<li>
+								<h3>
+									<span style="font-size: 30px;">6.</span>
+									Organic Products
+								</h3>
+								<div class="timeline-desc timeline-desc-line">And finally the best way is to switch to
+									the natural method of hair care. Organic shampoos contain natural ingredients to
+									strengthen your hair and are sulphate-free and paraben-free.</div>
+								<!-- <a href="portfolio-single-parallax.html" class="btn btn-sm btn-default mt-20">read
+									more</a> -->
+							</li>
+						</ul>
+
+					</div>
+				</section>
+				<!-- /TIMELINE -->
+
+				<!-- -->
+				<section>
+					<div class="container">
+
+						<h1 class="">THE 5 BEST VITAMINS FOR HAIR GROWTH ( +3 OTHER NUTRIENTS) :</h1>
+
+						<div class="box-inner">
+
+							<div class="timeline">
+								<!-- .timeline-inverse = right position [left on RTL] -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										01
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Vitamin A</h2>
+									<p>All cells need vitamin A for growth. This includes hair, the fastest growing
+										tissue in the human body.<br>
+										Vitamin A also helps skin glands make an oily substance called sebum. Sebum
+										moisturizes the scalp and helps keep hair healthy.</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										02
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">B-Vitamins</h2>
+									<p>One of the best known vitamins for hair growth is a B-vitamin called biotin.<br>
+										Studies link biotin deficiency with hair loss in humans. B-vitamins help carry
+										oxygen and nutrients to your scalp, which aids in hair growth.</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										03
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Vitamin C</h2>
+									<p>Free radical damage can block growth and cause your hair to age.<br>
+										Vitamin C is a powerful antioxidant that helps protect against the oxidative
+										stress caused by free radicals.<br>
+										In addition, your body needs vitamin C to create a protein known as collagen —
+										an important part of hair structure.<br>
+										Vitamin C also helps your body absorb iron, a mineral necessary for hair growth.
+									</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										04
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Vitamin D</h2>
+									<p>Low levels of vitamin D are linked to alopecia, a technical term for hair
+										loss.<br>
+										Research also shows that vitamin D may help create new follicles — the tiny
+										pores in the scalp where new hair can grow.
+									</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										05
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Vitamin E</h2>
+									<p>Vitamin E helps prevent oxidative stress and boost hair growth.
+									</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										06
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Iron</h2>
+									<p>Iron helps red blood cells carry oxygen to your cells. This makes it an important
+										mineral for many bodily functions, including hair growth.<br>
+										Iron deficiency, which causes anemia, is a major cause of hair loss. It’s
+										especially common in women.
+									</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										07
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Zinc</h2>
+									<p>Zinc plays an important role in hair tissue growth and repair. It also helps keep
+										the oil glands around the follicles working properly.<br>
+										Hair loss is a common symptom of zinc deficiency.
+									</p>
+
+								</div>
+								<!-- /ITEM -->
+
+								<!-- ITEM -->
+								<div class="timeline-item timeline-item-bordered">
+									<!-- timeline entry -->
+									<div class="timeline-entry rounded"
+										style="display: flex; justify-content: center; padding-top: 1rem;">
+										<!-- .rounded = entry -->
+										08
+										<!-- <span>offer</span> -->
+										<div class="timeline-vline">
+											<!-- vertical line -->
+										</div>
+									</div>
+									<!-- /timeline entry -->
+
+									<h2 class="uppercase bold fs-17">Protein</h2>
+									<p>Hair is made almost entirely of protein. Consuming enough is important for hair
+										growth.
+									</p>
+
+								</div>
+								<!-- /ITEM -->
+
+							</div>
+
+						</div>
+
+					</div>
+				</section>
+				<!-- / -->
+
+				<!-- -->
+				<section>
+
+					<h1 class="">CAUSES OF HAIR LOSS :</h1>
+
+					<div class="row" style="justify-content: center;">
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-brands fa-atlassian"></i>
+									<h2>Heredity Hair Loss</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-person"></i>
+									<h2>Age</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-disease"></i>
+									<h2>Alopecia areata</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-rectangle-xmark"></i>
+									<h2>Cancer Treatment</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-hands-holding-child"></i>
+									<h2>Childbirth, illness, or other stressors</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-droplet"></i>
+									<h2>Coloring, Perming or Straightening hair</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-spray-can-sparkles"></i>
+									<h2>Hairstyle pulls on your scalp.</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-square-virus"></i>
+									<h2>Hormonal imbalance</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-disease"></i>
+									<h2>Scalp infection</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-pump-medical"></i>
+									<h2>Medication, causing hair loss as a side effect.</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-syringe"></i>
+									<h2>Scalp psoriasis</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-disease"></i>
+									<h2>Scarring alopecia</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-virus-covid"></i>
+									<h2>Sexually transmitted infection</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-virus"></i>
+									<h2>Thyroid disease</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-dna"></i>
+									<h2>Biotin, iron, protein, or zinc deficiencies</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-shield-virus"></i>
+									<h2>Friction /frictional alopecia</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+						<div class="col-md-3">
+
+							<div class="box-icon box-icon-center box-icon-transparent box-icon-large">
+								<a class="box-icon-title" href="#">
+									<i class="fa-solid fa-skull-crossbones"></i>
+									<h2>Poison</h2>
+								</a>
+								<!-- <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante
+									venenatis dapibus posuere velit aliquet.</p>
+								<a class="box-icon-more font-lato fw-300" href="#">Learn More</a> -->
+							</div>
+
+						</div>
+
+					</div>
+				</section>
+				<!-- / -->
+
+			</div>
+		</section>
+		<!-- / -->
+
+
+		<!-- CALLOUT -->
+		<!-- <div class="callout callout-theme-color">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-9">
+					
+						<h3>Want to be part of our team?</h3>
+						<p>If so, click to join now, and be part of our dynamic team!</p>
+					</div>
+
+					<div class="col-md-3">
+						
+						<a href="page-careers.html" class="btn btn-primary btn-lg">Join Our Team</a>
+					</div>
+
+				</div>
+
+			</div>
+		</div> -->
+		<!-- /CALLOUT -->
+
+
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<!-- Footer Logo -->
+						<img class="footer-logo" src="assets/images/_smarty/logo-oregain-light.png" alt="" />
+
+						<!-- Small Description -->
+						<p><em>"Stronger, healthier hair starts with nourishing the roots."</em></p>
+
+						<!-- Contact Address -->
+						<address>
+							<ul class="list-unstyled">
+								<li class="footer-sprite address">
+									Islamabad, Pakistan.
+								</li>
+								<li class="footer-sprite phone">
+									Phone: +92-111-000-459
+								</li>
+								<li class="footer-sprite email">
+									<a href="mailto:support@yourname.com">info@oregain.pk</a>
+								</li>
+							</ul>
+						</address>
+						<!-- /Contact Address -->
+
+					</div>
+
+					<div class="col-md-3">
+
+						<!-- Latest Blog Post -->
+						<h4 class="letter-spacing-1">PRODUCTS</h4>
+						<ul class="footer-posts list-unstyled">
+							<li>
+								<a href="#">Hairgro23 Shampoo</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Oil</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Serum</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+						</ul>
+						<!-- /Latest Blog Post -->
+
+					</div>
+
+					<div class="col-md-2">
+
+						<!-- Links -->
+						<h4 class="letter-spacing-1">EXPLORE OREGAIN</h4>
+						<ul class="footer-links list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="page-haircare-basics.html">Haircare Basics</a></li>
+							<li><a href="page-our-story.html">Oregain - Our Story</a></li>
+							<li><a href="page-about-us.html">About Hairgro23</a></li>
+							<li><a href="#">Return & Refund</a></li>
+							<li><a href="page-faq.html">FAQ's</a></li>
+							<li><a href="page-contact.html">Contact Us</a></li>
+						</ul>
+						<!-- /Links -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Newsletter Form -->
+						<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+						<!-- <p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+	
+							<form class="validate" action="php/newsletter.php" method="post"
+								data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required"
+										placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form> -->
+						<!-- /Newsletter Form -->
+
+						<!-- Social Icons -->
+						<div class="mt-20">
+
+							<a href="#" class="social-icon social-icon-border social-facebook float-left"
+								data-toggle="tooltip" data-placement="top" title="Facebook">
+
+								<i class="fa-brands fa-facebook-f"></i>
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-gplus float-left"
+								data-toggle="tooltip" data-placement="top" title="Instagram">
+								<i class="fa-brands fa-instagram"></i>
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-linkedin float-left"
+								data-toggle="tooltip" data-placement="top" title="Whatsapp">
+								<i class="fa-brands fa-whatsapp"></i>
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+
+						</div>
+						<!-- /Social Icons -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<div class="need-help-online">
+						<p>Need help? Call us at <b><u style="cursor: pointer;">+923-111-000-459</u></b> or write to us
+							<b><u style="cursor: pointer;"><a
+										href="mailto:support@yourname.com">info@oregain.pk</a></u></b>
+							<br>
+							Online prices and selection generally match our retail store, but may vary. Prices and
+							offers are subject to change.
+						</p>
+					</div>
+					<ul class="float-right m-0 list-inline mobile-block">
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li>&bull;</li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+					&copy; All Rights Reserved, Company LTD
+				</div>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /wrapper -->
+
+
+	<!-- SCROLL TO TOP -->
+	<a href="#" id="toTop"></a>
+
+
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="inner">
+			<span class="loader"></span>
+		</div>
+	</div><!-- /PRELOADER -->
+
+
+	<!-- JAVASCRIPT FILES -->
+	<script>var plugin_path = 'assets/plugins/';</script>
+	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+	<script src="assets/js/scripts.js"></script>
+
+	<!-- STYLESWITCHER - REMOVE -->
+	<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+</body>
+
+</html>

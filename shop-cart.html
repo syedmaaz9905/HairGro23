@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Oregain - HairGrow</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon-oregain.webp">
+	<meta name="description" content="" />
+	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- WEB FONTS : use %7C instead of | (pipe) -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+		rel="stylesheet" type="text/css" />
+
+	<!-- Font Awesome - Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CORE CSS -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- THEME CSS -->
+	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout-shop.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+	<!-- CUSTOM CSS -->
+	<link href="./custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+
+<body class="smoothscroll enable-animation">
+
+	<!-- SLIDE TOP -->
+	<!-- <div id="slidetop">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+						sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et,
+						iaculis ac massa. </p>
+				</div>
+
+				<div class="col-md-4">
+					<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very
+								very very very very very very very very </a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit
+								amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur
+								adipiscing elit</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+					<ul class="list-unstyled">
+						<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+						<li><b>Phone:</b> 1-800-565-2390</li>
+						<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+		<a class="slidetop-toggle" href="#">
+			
+		</a>
+
+	</div> -->
+	<!-- /SLIDE TOP -->
+
+
+	<!-- wrapper -->
+	<div id="wrapper">
+
+		<!-- Top Bar -->
+		<div id="topBar">
+			<div class="container">
+
+				<!-- right -->
+				<ul class="top-links list-inline float-right">
+					<li class="text-welcome hidden-xs-down">Welcome to Oregain - HairGrow, <strong>John Doe</strong>
+					</li>
+					<li>
+						<a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i
+								class="fa fa-user hidden-xs-down"></i> MY ACCOUNT</a>
+						<ul class="dropdown-menu float-right">
+							<li><a tabindex="-1" href="#"><i class="fa fa-history"></i> ORDER HISTORY</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#"><i class="fa fa-bookmark"></i> MY WISHLIST</a></li>
+							<li><a tabindex="-1" href="#"><i class="fa fa-edit"></i> MY REVIEWS</a></li>
+							<li><a tabindex="-1" href="#"><i class="fa fa-cog"></i> MY SETTINGS</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#"><i class="glyphicon glyphicon-off"></i> LOGOUT</a></li>
+						</ul>
+					</li>
+					<li class="hidden-xs-down"><a href="page-login-1.html">LOGIN</a></li>
+					<li class="hidden-xs-down"><a href="page-register-1.html">REGISTER</a></li>
+				</ul>
+
+				<!-- left -->
+				<ul class="top-links list-inline">
+					<li class="hidden-xs-down"><a href="page-faq.html">FAQ'S</a></li>
+					<!-- <li>
+						<a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><img
+								class="flag-lang" src="assets/images/_smarty/flags/us.png" width="16" height="11"
+								alt="lang" /> ENGLISH</a>
+						<ul class="dropdown-langs dropdown-menu">
+							<li><a tabindex="-1" href="#"><img class="flag-lang"
+										src="assets/images/_smarty/flags/us.png" width="16" height="11" alt="lang" />
+									ENGLISH</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#"><img class="flag-lang"
+										src="assets/images/_smarty/flags/de.png" width="16" height="11" alt="lang" />
+									GERMAN</a></li>
+							<li><a tabindex="-1" href="#"><img class="flag-lang"
+										src="assets/images/_smarty/flags/ru.png" width="16" height="11" alt="lang" />
+									RUSSIAN</a></li>
+							<li><a tabindex="-1" href="#"><img class="flag-lang"
+										src="assets/images/_smarty/flags/it.png" width="16" height="11" alt="lang" />
+									ITALIAN</a></li>
+						</ul>
+					</li> -->
+					<!-- <li>
+						<a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#">USD</a>
+						<ul class="dropdown-langs dropdown-menu">
+							<li><a tabindex="-1" href="#">USD</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="#">EUR</a></li>
+							<li><a tabindex="-1" href="#">GBP</a></li>
+						</ul>
+					</li> -->
+				</ul>
+
+			</div>
+		</div>
+		<!-- /Top Bar -->
+
+		<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+		<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+			<!-- SEARCH HEADER -->
+			<div class="search-box over-header">
+				<a id="closeSearch" href="#" class="fa fa-remove"></a>
+
+				<form action="page-search-result-1.html" method="get">
+					<input type="text" class="form-control" placeholder="SEARCH" />
+				</form>
+			</div>
+			<!-- /SEARCH HEADER -->
+
+
+			<!-- TOP NAV -->
+			<header id="topNav">
+				<div class="container">
+
+					<!-- Mobile Menu Button -->
+					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<!-- BUTTONS -->
+					<!-- <ul class="float-right nav nav-pills nav-second-main"> -->
+
+					<!-- SEARCH -->
+					<!-- <li class="search">
+							<a href="javascript:;">
+								<i class="fa fa-search"></i>
+							</a>
+						</li> -->
+					<!-- /SEARCH -->
+
+
+					<!-- </ul> -->
+					<!-- /BUTTONS -->
+
+					<!-- Logo -->
+					<a class="logo float-left" href="index.html">
+						<img src="assets/images/_smarty/logo-oregain-dark.png" alt="" />
+					</a>
+
+					<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+					<div class="navbar-collapse collapse float-right nav-main-collapse">
+						<nav class="nav-main">
+
+							<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+							<ul id="topMain" class="nav nav-pills nav-main">
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn active">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="index.html">
+										HOME
+									</a>
+								</li>
+
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="page-haircare-basics.html">
+										HAIRCARE BASICS
+									</a>
+								</li>
+
+								<li class="dropdown">
+									<!-- FEATURES -->
+									<a class="dropdown-toggle" href="#">
+										OREGAIN
+									</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown">
+											<a class="" href="page-our-story.html">
+												<i class="fa-regular fa-gem"></i> OUR STORY
+											</a>
+										</li>
+										<li class="dropdown">
+											<a class="" href="page-about-us.html">
+												<i class="fa-solid fa-bottle-droplet"></i> ABOUT HAIRGROW23
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="page-contact.html">
+										CONTACT US
+									</a>
+								</li>
+
+								<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+
+							</ul>
+
+						</nav>
+					</div>
+
+				</div>
+			</header>
+			<!-- /Top Nav -->
+
+		</div>
+
+
+		<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+		<section class="page-header page-header-xs">
+			<div class="container">
+
+				<h1>SHOP CART</h1>
+
+				<!-- breadcrumbs -->
+				<!-- <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Shop</a></li>
+					<li class="active">Shop Cart</li>
+				</ol> -->
+				<!-- /breadcrumbs -->
+
+			</div>
+		</section>
+		<!-- /PAGE HEADER -->
+
+
+
+
+		<!-- CART -->
+		<section>
+			<div class="container">
+
+
+				<!-- EMPTY CART -->
+				<!-- <div class="card card-default">
+					<div class="card-block">
+						<strong>Shopping cart is empty!</strong><br />
+						You have no items in your shopping cart.<br />
+						Click <a href="index.html">here</a> to continue shopping. <br />
+						<span class="badge badge-warning">this is just an empty cart example</span>
+					</div>
+				</div> -->
+				<!-- /EMPTY CART -->
+
+
+
+				<!-- CART -->
+				<div class="row">
+
+					<!-- LEFT -->
+					<div class="col-lg-9 col-sm-8">
+
+						<!-- CART -->
+						<form class="cartContent clearfix" method="post" action="#">
+
+							<!-- cart content -->
+							<div id="cartContent">
+								<!-- cart header -->
+								<div class="item head clearfix">
+									<span class="cart_img"></span>
+									<span class="product_name fs-13 bold">PRODUCT NAME</span>
+									<span class="remove_item fs-13 bold"></span>
+									<span class="total_price fs-13 bold">TOTAL</span>
+									<span class="qty fs-13 bold">QUANTITY</span>
+								</div>
+								<!-- /cart header -->
+
+								<!-- cart item -->
+								<div class="item">
+									<div class="cart_img float-left fw-100 p-10 text-left"><img
+											src="product-1_100x100.jpeg" alt="" width="80" />
+									</div>
+									<a href="shop-single-left.html" class="product_name">
+										<span>HAIR SHAMPOO</span>
+										<small>REGROW23</small>
+									</a>
+									<a href="#" class="remove_item"><i class="fa fa-times"></i></a>
+									<div class="total_price">$<span>35.00</span></div>
+									<div class="qty"><input type="number" value="1" name="qty" maxlength="3" max="999"
+											min="1" /> &times; $35.00</div>
+									<div class="clearfix"></div>
+								</div>
+								<!-- /cart item -->
+
+								<!-- cart item -->
+								<div class="item">
+									<div class="cart_img float-left fw-100 p-10 text-left"><img
+											src="product-2_100x100.jpeg" alt="" width="80" />
+									</div>
+									<a href="shop-single-left.html" class="product_name">
+										<span>Great Black Shoes For Man and Only Man...</span>
+										<small>Color: Black, Size: 8.5</small>
+									</a>
+									<a href="#" class="remove_item"><i class="fa fa-times"></i></a>
+									<div class="total_price">$<span>35.00</span></div>
+									<div class="qty"><input type="number" value="1" name="qty" maxlength="3" max="999"
+											min="1" /> &times; $35.00</div>
+									<div class="clearfix"></div>
+								</div>
+								<!-- /cart item -->
+
+								<!-- cart item -->
+								<div class="item">
+									<div class="cart_img float-left fw-100 p-10 text-left"><img
+											src="product-3_100x100.jpeg" alt="" width="80" />
+									</div>
+									<a href="shop-single-left.html" class="product_name">
+										<span>Pink Lady Perfect Shoes</span>
+										<small>Color: Pink, Size: 6.5</small>
+									</a>
+									<a href="#" class="remove_item"><i class="fa fa-times"></i></a>
+									<div class="total_price">$<span>35.00</span></div>
+									<div class="qty"><input type="number" value="1" name="qty" maxlength="3" max="999"
+											min="1" /> &times; $35.00</div>
+									<div class="clearfix"></div>
+								</div>
+								<!-- /cart item -->
+
+
+								<!-- update cart -->
+								<button class="btn btn-success mt-20 mr-10 float-right"><i
+										class="glyphicon glyphicon-ok"></i> UPDATE CART</button>
+								<button class="btn btn-danger mt-20 mr-10 float-right"><i class="fa fa-remove"></i>
+									CLEAR CART</button>
+								<!-- /update cart -->
+
+								<div class="clearfix"></div>
+							</div>
+							<!-- /cart content -->
+
+						</form>
+						<!-- /CART -->
+
+					</div>
+
+
+					<!-- RIGHT -->
+					<div class="col-lg-3 col-sm-4">
+
+						<!-- TOGGLE -->
+						<div class="toggle-transparent toggle-bordered-full clearfix">
+
+							<!-- <div class="toggle mt-0">
+								<label>Voucher</label>
+
+								<div class="toggle-content">
+									<p>Enter your discount coupon code.</p>
+
+									<form action="#" method="post" class="m-0">
+										<input type="text" id="cart-code" name="cart-code"
+											class="form-control text-center mb-10" placeholder="Voucher Code"
+											required="required">
+										<button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+									</form>
+								</div>
+							</div> -->
+
+							<!-- <div class="toggle">
+								<label>Shipping tax calculator</label>
+
+								<div class="toggle-content">
+									<p>To get a shipping estimate, please enter your destination.</p>
+
+									<form action="#" method="post" class="m-0">
+										<label>Country*</label>
+										<select id="cart-tax-country" name="cart-tax-country"
+											class="form-control pointer mb-20">
+											<option value="1">United States</option>
+											<option value="2">United Kingdom</option>
+											<option value="2">...........</option>
+											
+										</select>
+
+										<label>State/Province</label>
+										<select id="cart-tax-state" name="cart-tax-state"
+											class="form-control pointer mb-20">
+											<option value="1">Alabama</option>
+											<option value="2">Alaska</option>
+											<option value="2">...........</option>
+											
+										</select>
+
+										<label>Zip/Postal Code</label>
+										<input type="text" id="cart-tax-postal" name="cart-tax-postal"
+											class="form-control mb-20">
+
+										<button class="btn btn-primary btn-block" type="submit">SUBMIT</button>
+									</form>
+								</div>
+							</div> -->
+
+						</div>
+						<!-- /TOGGLE -->
+
+						<div class="toggle-transparent toggle-bordered-full clearfix">
+							<div class="toggle active">
+								<div class="toggle-content">
+
+									<span class="clearfix">
+										<span class="float-right">$105.00</span>
+										<strong class="float-left">Subtotal:</strong>
+									</span>
+									<span class="clearfix">
+										<span class="float-right">$0.00</span>
+										<span class="float-left">Discount:</span>
+									</span>
+									<span class="clearfix">
+										<span class="float-right">$0.00</span>
+										<span class="float-left">Shipping:</span>
+									</span>
+
+									<hr />
+
+									<span class="clearfix">
+										<span class="float-right fs-20">$105.00</span>
+										<strong class="float-left">TOTAL:</strong>
+									</span>
+
+									<hr />
+
+									<a href="shop-checkout.html" class="btn btn-primary btn-lg btn-block fs-15"><i
+											class="fa fa-mail-forward"></i> Proceed to Checkout</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- /CART -->
+
+			</div>
+		</section>
+		<!-- /CART -->
+
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<!-- Footer Logo -->
+						<img class="footer-logo" src="assets/images/_smarty/logo-oregain-light.png" alt="" />
+
+						<!-- Small Description -->
+						<p><em>"Stronger, healthier hair starts with nourishing the roots."</em></p>
+
+						<!-- Contact Address -->
+						<address>
+							<ul class="list-unstyled">
+								<li class="footer-sprite address">
+									Islamabad, Pakistan.
+								</li>
+								<li class="footer-sprite phone">
+									Phone: +92-111-000-459
+								</li>
+								<li class="footer-sprite email">
+									<a href="mailto:support@yourname.com">info@oregain.pk</a>
+								</li>
+							</ul>
+						</address>
+						<!-- /Contact Address -->
+
+					</div>
+
+					<div class="col-md-3">
+
+						<!-- Latest Blog Post -->
+						<h4 class="letter-spacing-1">PRODUCTS</h4>
+						<ul class="footer-posts list-unstyled">
+							<li>
+								<a href="#">Hairgro23 Shampoo</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Oil</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Serum</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+						</ul>
+						<!-- /Latest Blog Post -->
+
+					</div>
+
+					<div class="col-md-2">
+
+						<!-- Links -->
+						<h4 class="letter-spacing-1">EXPLORE OREGAIN</h4>
+						<ul class="footer-links list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="page-haircare-basics.html">Haircare Basics</a></li>
+							<li><a href="page-our-story.html">Oregain - Our Story</a></li>
+							<li><a href="page-about-us.html">About Hairgro23</a></li>
+							<li><a href="#">Return & Refund</a></li>
+							<li><a href="page-faq.html">FAQ's</a></li>
+							<li><a href="page-contact.html">Contact Us</a></li>
+						</ul>
+						<!-- /Links -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Newsletter Form -->
+						<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+						<!-- <p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+	
+							<form class="validate" action="php/newsletter.php" method="post"
+								data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required"
+										placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form> -->
+						<!-- /Newsletter Form -->
+
+						<!-- Social Icons -->
+						<div class="mt-20">
+
+							<a href="#" class="social-icon social-icon-border social-facebook float-left"
+								data-toggle="tooltip" data-placement="top" title="Facebook">
+
+								<i class="fa-brands fa-facebook-f"></i>
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-gplus float-left"
+								data-toggle="tooltip" data-placement="top" title="Instagram">
+								<i class="fa-brands fa-instagram"></i>
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-linkedin float-left"
+								data-toggle="tooltip" data-placement="top" title="Whatsapp">
+								<i class="fa-brands fa-whatsapp"></i>
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+
+						</div>
+						<!-- /Social Icons -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<div class="need-help-online">
+						<p>Need help? Call us at <b><u style="cursor: pointer;">+923-111-000-459</u></b> or write to us
+							<b><u style="cursor: pointer;"><a
+										href="mailto:support@yourname.com">info@oregain.pk</a></u></b>
+							<br>
+							Online prices and selection generally match our retail store, but may vary. Prices and
+							offers are subject to change.
+						</p>
+					</div>
+					<ul class="float-right m-0 list-inline mobile-block">
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li>&bull;</li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+					&copy; All Rights Reserved, Company LTD
+				</div>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /wrapper -->
+
+
+	<!-- SCROLL TO TOP -->
+	<a href="#" id="toTop"></a>
+
+
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="inner">
+			<span class="loader"></span>
+		</div>
+	</div><!-- /PRELOADER -->
+
+
+	<!-- JAVASCRIPT FILES -->
+	<script>var plugin_path = 'assets/plugins/';</script>
+	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+	<script src="assets/js/scripts.js"></script>
+
+	<!-- STYLESWITCHER - REMOVE -->
+	<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<script src="assets/js/view/demo.shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Oregain - HairGrow</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon-oregain.webp">
+	<meta name="description" content="" />
+	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- WEB FONTS : use %7C instead of | (pipe) -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+		rel="stylesheet" type="text/css" />
+
+	<!-- Font Awesome - Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CORE CSS -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- THEME CSS -->
+	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+	<!-- CUSTOM CSS -->
+	<link href="./custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+
+<body class="smoothscroll enable-animation">
+
+	<!-- wrapper -->
+	<div id="wrapper">
+
+		<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+			<!-- TOP NAV -->
+			<header id="topNav">
+				<div class="container">
+
+					<!-- Mobile Menu Button -->
+					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<!-- Logo -->
+					<a class="logo float-left" href="index.html">
+						<img src="assets/images/_smarty/logo-oregain-dark.png" alt="" />
+					</a>
+
+					<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+					<div class="navbar-collapse collapse float-right nav-main-collapse">
+						<nav class="nav-main">
+							<ul id="topMain" class="nav nav-pills nav-main">
+								<li
+									class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="index.html">
+										HOME
+									</a>
+								</li>
+								<li
+									class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- BASICS -->
+									<a class="dropdown-toggle noicon" href="page-haircare-basics.html">
+										HAIRCARE BASICS
+									</a>
+								</li>
+								<li class="dropdown">
+									<!-- OREGAIN -->
+									<a class="dropdown-toggle" href="#">
+										OREGAIN
+									</a>
+									<ul class="dropdown-menu">
+										<li
+											class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+											<a class="" href="page-our-story.html">
+												<i class="fa-regular fa-gem"></i> OUR STORY
+											</a>
+										</li>
+										<li
+											class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+											<a class="" href="page-about-us.html">
+												<i class="fa-solid fa-bottle-droplet"></i> ABOUT HAIRGROW23
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li
+									class="dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- BASICS -->
+									<a class="dropdown-toggle noicon" href="page-contact.html">
+										CONTACT US
+									</a>
+								</li>
+							</ul>
+
+						</nav>
+					</div>
+
+				</div>
+			</header>
+			<!-- /Top Nav -->
+
+		</div>
+
+
+		<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+		<section class="page-header parallax parallax-3"
+			style="background-image:url('assets/images/_smarty/imgpattern2.jpg')">
+			<div class="overlay dark-0">
+				<!-- dark overlay [0 to 9 opacity] -->
+			</div>
+
+			<div class="container">
+
+				<h1>FAQ'S</h1>
+
+				<!-- breadcrumbs -->
+				<!-- <ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pages</a></li>
+						<li class="active">Frequently Asked Questions</li>
+					</ol>/breadcrumbs -->
+
+			</div>
+		</section>
+		<!-- /PAGE HEADER -->
+
+
+
+
+		<!-- -->
+		<section>
+			<div class="container">
+
+				<!-- FILTER -->
+				<ul class="nav nav-pills mix-filter mb-30">
+					<li data-filter="all" class="filter active"><a href="#">All</a></li>
+					<li data-filter="advantages" class="filter"><a href="#">Advantages</a></li>
+					<!-- <li data-filter="disadvantages" class="filter"><a href="#">Disadvantages</a></li> -->
+				</ul>
+				<!-- /FILTER -->
+
+				<div class="row mix-grid">
+
+					<!-- LEFT COLUMNS -->
+					<div class="col-md-9">
+
+						<!-- TOGGLES -->
+						<div class="toggle toggle-transparent toggle-bordered-simple">
+
+							<!-- <div class="toggle mix design">
+									<label>1. Nulla lacinia iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											<img class="hidden-sm float-left" src="demo_files/images/girl_looking-min_thumb.jpg" alt="Careers" />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div> -->
+
+							<!-- <div class="toggle mix photography">
+									<label>2. Lacinia iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+										<div class="row">
+
+											<div class="col-md-4 col-sm-6">
+
+												<ul class="list-icon check-square">
+													<li>Nulla lacinia iaculis nulla</li>
+													<li>Cum sociis natoque penatibus</li>
+													<li>Magnis dis parturient montes</li>
+												</ul>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<ul class="list-icon check-square">
+													<li>Nulla lacinia iaculis nulla</li>
+													<li>Cum sociis natoque penatibus</li>
+													<li>Magnis dis parturient montes</li>
+												</ul>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<ul class="list-icon check-square">
+													<li>Nulla lacinia iaculis nulla</li>
+													<li>Cum sociis natoque penatibus</li>
+													<li>Magnis dis parturient montes</li>
+												</ul>
+
+											</div>
+
+										</div>
+
+									</div>
+								</div> -->
+
+							<!-- <div class="toggle mix design">
+									<label>3. Quisque rutrum pellentesque imperdiet?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+										<div class="row">
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="demo_files/images/1200x800/10-min.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+														<img class="img-fluid" src="demo_files/images/451x300/10-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="http://www.youtube.com/watch?v=s0MDY9fl-IA" class="item-image lightbox" data-plugin-options='{"type":"iframe"}'>
+														<img class="img-fluid" src="demo_files/images/451x300/11-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="demo_files/images/1200x800/25-min.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+														<img class="img-fluid" src="demo_files/images/451x300/25-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+								</div> -->
+
+							<!-- <div class="toggle mix development">
+									<label>4. Iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div> -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>1. Why Should I Use Hairgrow23 Shampoo To Prevent Hair Loss?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hairgro23 Shampoo is an organic shampoo with NO Sulfates, NO Silicones, NO
+										Parabens, NO
+										Artificial Colors, and NO Fragrance. It is formulated with mild surfactants, DHT
+										blockers, natural
+										preservatives, and 23 natural ingredients that solely work on the reduction of
+										hair loss, the generation
+										of new hair follicles, and the strengthening of hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>2. Can Hairgrow23 Shampoo Be Used To Improve Hair Growth?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										YES. With regular use, Hairgro23 Shampoo has proved to improve hair growth and
+										show
+										noticeable results within 3 months.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>3. Does Hairgrow23 Shampoo Also Regenrates Hair For Those Who Experience Hair
+									Loss Due To Age?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										You’ll be surprised! YES. DHT is a hormone that binds to receptors on your scalp
+										and causes hair
+										loss that leads to baldness. That’s where DHT Blockers come into action.
+										Hairgro23 Shampoo formulation
+										has added DHT Blockers.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>4. How Hairgrow23 Shampoo Is Better Than Other Brands Available In The Stores,
+									That Claim To Reduce Hair Loss?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hairgro23 Shampoo is an organic shampoo with NO Sulfates, NO Silicones, NO
+										Parabens, NO
+										Artificial Colors, and NO Fragrance. Many shampoos present in the stores either
+										have Sulfates or have
+										parabens that are definitely not good for your hair. Few chemicals found in
+										shampoos that cause hair
+										loss are Sulfates, Chemical-based Fragrances, Sodium Chloride, Parabens,
+										Propylene Glycerol,
+										Diethanolamine (DEA), and Triethanolamine (TEA),
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>5. How Do I Use Hairgrow23 Shampoo To Improve My Hair Growth?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Just apply it on wet hair, leave it for about 5 minutes and then wash with warm
+										water.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>6. I Have Dry Hair. Can I Use Hairgrow23 Shampoo On My Hair For The Reduction Of
+									Hair Loss?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hairgro23 Shampoo is for all hair types. For dry hair, it is also recommended to
+										use Hairgro23 Oil
+										before and Hairgro23 Serum after washing your hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>7. My Hair Is Very Thin And Weak. Can Hairgrow23 Shampoo Solve My
+									Problem?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Yes. Hairgro23 Shampoo formulation includes essential oils and vitamins that
+										work on improving
+										thinning of hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>8. What More Can I Do To Reduce My Hair Loss And Quickly Regenerate New Hair?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Apply Hairgro23 Oil and leave it overnight, wash your hair with Hairgro23
+										Shampoo and use
+										Hairgro23 Serum after washing your hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>9. What Are The Benefits Of Hairgro23 Oil?</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hairgro23 Oil is formulated with Natural and Essential oils that entirely work
+										on improving hair
+										growth and reducing hair loss. In addition to this, it helps in nourishing the
+										hair and making it strong and
+										healthy.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>10. How Long Will It Take For A Completely Bald Head To Start Showing Results?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Regular and proper use of Hairgro23 products will start showing results within
+										three months.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>11. What Other Hair Problems Can Hairgro23 Products Solve?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hairgro23 repairs dead skin cells on the scalp, prevents itching on the scalp,
+										cures dandruff,
+										nourishes & moisturizes the scalp, and protects hair from sun damage.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>12. Is There Any Side Effect Of Using Hairgro23 Products?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										No, as it is only for external use. It is made of natural ingredients and very
+										mild & safe
+										surfactants.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>13. Are There Any Chemicals Used In Hairgro23 Products?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Very mild Chemicals are used in the shampoo, which are considered to be safe
+										internationally.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>14. How Often Should I Shampoo My Hair With Hairgro23 Shampoo?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Can be used daily as a normal shampoo.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>15. Should I Take Any Medicines To Solve My Hair Loss Problem?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Consult your doctor.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>16. Why Do We Experience Hair Loss?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										There are usually both internal and external factors that impact normal hair
+										growth, like
+										hormonal changes, genetic predisposition, excessive heat styling,
+										over-processing, HBP medication, etc.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>17. How Do I Stop The Greying Of My Hair?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hairgro23 contains ingredients that restore the original hair color. However,
+										the process would
+										take time.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>18. How Often Should I Wash My Hair?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										It depends on the hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>19. Why Do We Have Dandruff And Dry Scalp?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Dandruff can be caused by various reasons; dry scalp, eczema, or even psoriasis.
+										A flaky scalp is
+										the result of dandruff flakes that are actually dead skin cells. They fall off
+										the scalp naturally and more so
+										if you scratch.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>20. Is Regrowth Possible In Hereditary Hair Loss?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Yes, treatment can help stop or slow hair loss. It may also help regrow hair.
+										The earlier
+										treatment is started, the better it works. Without treatment, you will continue
+										to lose hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>21. Is Regrowth Possible In Aged People?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Treatment helps some people regrow their hair.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>22. Is Regrowth Possible In The Case Of Alopecia Areata (A Disease Causing Hair
+									Loss)?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Yes. If your hair fails to grow back on its own, treatment may help to stimulate
+										regrowth.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>23. Is Regrowth Possible After Cancer Treatment?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hair usually starts to regrow within months of finishing chemotherapy or
+										radiation treatments
+										to the head or neck. Dermatologists can offer medication to help hair grow back
+										more quickly.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>24. Is Regrowth Possible After Child birth Illness Or Other Stressors?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										If the stress stops, your body will readjust and the excessive shedding will
+										stop. When the
+										shedding stops, most people see their hair regain its normal fullness within 6
+										to 9 months.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>25. Is Regrowth Possible In Hair Loss Due To Coloring, Perming Or Straightening?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Treatment may help.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>26. Is Regrowth Possible In Case Of Hormonal Imbalance?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Treatment may help.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>27. Is Regrowth Possible In Case Of Scalp Infection?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Yes, treatment can get rid of the infection. Once the infection clears, hair
+										tends to grow.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix advantages">
+								<!-- toggle -->
+								<label>28. Is Regrowth Possible After Scalp Psoriasis?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										Hair tends to regrow once the scalp psoriasis clears, but this takes time. By
+										following the
+										dermatologists’ tips, you may be able to prevent hair loss.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>29. Is Dandruff A Cause Of Hair Loss?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										In most cases, dandruff doesn't directly cause hair loss. However, the itchiness
+										it causes can
+										lead to scratching. This can injure your hair follicles, leading to some hair
+										loss, though not complete
+										baldness.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+							<div class="toggle mix all">
+								<!-- toggle -->
+								<label>30. Is Oily Greasy Scalp Causes Hair Loss?
+								</label>
+								<div class="toggle-content">
+									<p class="clearfix">
+										When an excess amount of sebum collects on your scalp, the sebum buildup clogs
+										up the pores
+										as it hardens over time. This sebum buildup can cause hair thinning and hair
+										loss. Hair falls out faster
+										than usual during the normal hair growth cycle because the sebum has clogged up
+										the follicles.
+									</p>
+								</div>
+							</div><!-- /toggle -->
+
+						</div>
+						<!-- /TOGGLES -->
+
+						<!-- CALLOUT -->
+						<!-- <div class="callout alert alert-border mt-60 mb-60">
+
+							<div class="row">
+
+								<div class="col-md-9 col-sm-12">
+									<h4>Call now at <strong>+800-565-2390</strong> and get 15% discount!</strong></h4>
+									<p class="font-lato fs-17">
+										We truly care about our users and our product.
+									</p>
+								</div>
+
+
+								<div class="col-md-3 col-sm-12 text-right">
+									<a href="#purchase" rel="nofollow" target="_blank"
+										class="btn btn-default btn-lg btn-round">PURCHASE NOW</a>
+								</div>
+
+							</div>
+
+						</div> -->
+						<!-- /CALLOUT -->
+
+					</div>
+					<!-- /LEFT COLUMNS -->
+
+					<!-- RIGHT COLUMNS -->
+					<div class="col-md-3">
+
+						<!-- POPULAR QUESTIONS -->
+						<h4><strong>ORE</strong>GAIN</h4>
+						<p><em>"Transform your hair and boost your confidence with our innovative hair growth solutions
+								that utilize the latest scientific research to nourish and revitalize your scalp,
+								resulting in thicker, fuller, and healthier-looking hair."</em></p>
+
+						<!-- <hr /> -->
+
+						<!-- <ul class="list-unstyled">
+							<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+							<li><a href="#">Consectetur adipiscing elit</a></li>
+							<li><a href="#">Quisque rutrum pellentesque</a></li>
+						</ul> -->
+
+						<hr />
+
+						<!-- ASK A QUSTION -->
+						<h4><strong>Ask</strong> a question</h4>
+						<form action="#" method="post" class="sky-form clearfix">
+
+							<label class="input">
+								<i class="ico-prepend fa fa-user"></i>
+								<input type="text" placeholder="Name">
+							</label>
+
+							<label class="input">
+								<i class="ico-prepend fa fa-envelope"></i>
+								<input type="text" placeholder="Email">
+							</label>
+
+							<label class="textarea">
+								<i class="ico-prepend fa fa-comment"></i>
+								<textarea rows="3" placeholder="Type your question..."></textarea>
+							</label>
+
+							<button class="btn btn-primary btn-sm float-right">SUBMIT YOUR QUESTION</button>
+
+						</form>
+
+						<!-- <hr /> -->
+
+						<!-- FLICKR WIDGET -->
+						<!-- <h4 class="fs-16 mb-10"><strong>Flickr</strong> Photo</h4>
+						<div class="widget-flickr clearfix lightbox mb-60" data-id="37304598@N02" data-limit="8"></div> -->
+
+					</div>
+					<!-- /RIGHT COLUMNS -->
+
+				</div>
+
+			</div>
+		</section>
+		<!-- / -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<!-- Footer Logo -->
+						<img class="footer-logo" src="assets/images/_smarty/logo-oregain-light.png" alt="" />
+
+						<!-- Small Description -->
+						<p><em>"Stronger, healthier hair starts with nourishing the roots."</em></p>
+
+						<!-- Contact Address -->
+						<address>
+							<ul class="list-unstyled">
+								<li class="footer-sprite address">
+									Islamabad, Pakistan.
+								</li>
+								<li class="footer-sprite phone">
+									Phone: +92-111-000-459
+								</li>
+								<li class="footer-sprite email">
+									<a href="mailto:support@yourname.com">info@oregain.pk</a>
+								</li>
+							</ul>
+						</address>
+						<!-- /Contact Address -->
+
+					</div>
+
+					<div class="col-md-3">
+
+						<!-- Latest Blog Post -->
+						<h4 class="letter-spacing-1">PRODUCTS</h4>
+						<ul class="footer-posts list-unstyled">
+							<li>
+								<a href="#">Hairgro23 Shampoo</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Oil</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Serum</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+						</ul>
+						<!-- /Latest Blog Post -->
+
+					</div>
+
+					<div class="col-md-2">
+
+						<!-- Links -->
+						<h4 class="letter-spacing-1">EXPLORE OREGAIN</h4>
+						<ul class="footer-links list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="page-haircare-basics.html">Haircare Basics</a></li>
+							<li><a href="page-our-story.html">Oregain - Our Story</a></li>
+							<li><a href="page-about-us.html">About Hairgro23</a></li>
+							<li><a href="#">Return & Refund</a></li>
+							<li><a href="page-faq.html">FAQ's</a></li>
+							<li><a href="page-contact.html">Contact Us</a></li>
+						</ul>
+						<!-- /Links -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Newsletter Form -->
+						<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+						<!-- <p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+
+						<form class="validate" action="php/newsletter.php" method="post"
+							data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+								<input type="email" id="email" name="email" class="form-control required"
+									placeholder="Enter your Email">
+								<span class="input-group-btn">
+									<button class="btn btn-success" type="submit">Subscribe</button>
+								</span>
+							</div>
+						</form> -->
+						<!-- /Newsletter Form -->
+
+						<!-- Social Icons -->
+						<div class="mt-20">
+
+							<a href="#" class="social-icon social-icon-border social-facebook float-left"
+								data-toggle="tooltip" data-placement="top" title="Facebook">
+
+								<i class="fa-brands fa-facebook-f"></i>
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-gplus float-left"
+								data-toggle="tooltip" data-placement="top" title="Instagram">
+								<i class="fa-brands fa-instagram"></i>
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-linkedin float-left"
+								data-toggle="tooltip" data-placement="top" title="Whatsapp">
+								<i class="fa-brands fa-whatsapp"></i>
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+
+						</div>
+						<!-- /Social Icons -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<div class="need-help-online">
+						<p>Need help? Call us at <b><u style="cursor: pointer;">+923-111-000-459</u></b> or write to us
+							<b><u style="cursor: pointer;"><a
+										href="mailto:support@yourname.com">info@oregain.pk</a></u></b>
+							<br>
+							Online prices and selection generally match our retail store, but may vary. Prices and
+							offers are subject to change.
+						</p>
+					</div>
+					<ul class="float-right m-0 list-inline mobile-block">
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li>&bull;</li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+					&copy; All Rights Reserved, Company LTD
+				</div>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /wrapper -->
+
+
+	<!-- SCROLL TO TOP -->
+	<a href="#" id="toTop"></a>
+
+
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="inner">
+			<span class="loader"></span>
+		</div>
+	</div><!-- /PRELOADER -->
+
+
+	<!-- JAVASCRIPT FILES -->
+	<script>var plugin_path = 'assets/plugins/';</script>
+	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+	<script src="assets/js/scripts.js"></script>
+
+	<!-- STYLESWITCHER - REMOVE -->
+	<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+</body>
+
+</html>

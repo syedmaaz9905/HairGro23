@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Oregain - HairGrow</title>
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon-oregain.webp">
+	<meta name="description" content="" />
+	<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+	<!-- mobile settings -->
+	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- WEB FONTS : use %7C instead of | (pipe) -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
+		rel="stylesheet" type="text/css" />
+
+	<!-- Font Awesome - Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- CORE CSS -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- THEME CSS -->
+	<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+	<!-- PAGE LEVEL SCRIPTS -->
+	<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+	<!-- CUSTOM CSS -->
+	<link href="./custom.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+
+<body class="smoothscroll enable-animation">
+
+	<!-- SLIDE TOP -->
+	<!-- <div id="slidetop">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-4">
+					<h6><i class="icon-heart"></i> WHY SMARTY?</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales
+						sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et,
+						iaculis ac massa. </p>
+				</div>
+
+				<div class="col-md-4">
+					<h6><i class="fa-facheck"></i> RECENTLY VISITED</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> This is a very long text, very very very very
+								very very very very very very very very </a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Lorem ipsum dolor sit amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Dolor sit amet,consectetur adipiscing elit
+								amet</a></li>
+						<li><a href="#"><i class="fa fa-angle-right"></i> Consectetur adipiscing elit amet,consectetur
+								adipiscing elit</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4">
+					<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+					<ul class="list-unstyled">
+						<li><b>Address:</b> PO Box 21132, Here Weare St, <br /> Melbourne, Vivas 2355 Australia</li>
+						<li><b>Phone:</b> 1-800-565-2390</li>
+						<li><b>Email:</b> <a href="mailto:support@yourname.com">support@yourname.com</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+		<a class="slidetop-toggle" href="#">
+			
+		</a>
+
+	</div> -->
+	<!-- /SLIDE TOP -->
+
+
+	<!-- wrapper -->
+	<div id="wrapper">
+
+		<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+		<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+			<!-- TOP NAV -->
+			<header id="topNav">
+				<div class="container">
+
+					<!-- Mobile Menu Button -->
+					<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
+
+					<!-- Logo -->
+					<a class="logo float-left" href="index.html">
+						<img src="assets/images/_smarty/logo-oregain-dark.png" alt="" />
+					</a>
+
+					<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+					<div class="navbar-collapse collapse float-right nav-main-collapse">
+						<nav class="nav-main">
+
+							<ul id="topMain" class="nav nav-pills nav-main">
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn active">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="index.html">
+										HOME
+									</a>
+								</li>
+
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="page-haircare-basics.html">
+										HAIRCARE BASICS
+									</a>
+								</li>
+
+								<li class="dropdown">
+									<!-- FEATURES -->
+									<a class="dropdown-toggle" href="#">
+										OREGAIN
+									</a>
+									<ul class="dropdown-menu">
+										<li class="dropdown">
+											<a class="" href="page-our-story.html">
+												<i class="fa-regular fa-gem"></i> OUR STORY
+											</a>
+										</li>
+										<li class="dropdown">
+											<a class="" href="page-about-us.html">
+												<i class="fa-solid fa-bottle-droplet"></i> ABOUT HAIRGROW23
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li
+									class="dropdown dropdown mega-menu nav-animate-fadeIn nav-hover-animate hover-animate-bounceIn">
+									<!-- HOME -->
+									<a class="dropdown-toggle noicon" href="page-contact.html">
+										CONTACT US
+									</a>
+								</li>
+
+								<!-- 
+										MENU ANIMATIONS
+											.nav-animate-fadeIn
+											.nav-animate-fadeInUp
+											.nav-animate-bounceIn
+											.nav-animate-bounceInUp
+											.nav-animate-flipInX
+											.nav-animate-flipInY
+											.nav-animate-zoomIn
+											.nav-animate-slideInUp
+
+											.nav-hover-animate 		= animate text on hover
+
+											.hover-animate-bounceIn = bounceIn effect on mouse over of main menu
+									-->
+
+							</ul>
+
+						</nav>
+					</div>
+
+				</div>
+			</header>
+			<!-- /Top Nav -->
+
+		</div>
+
+
+		<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+		<section class="page-header page-header-xlg parallax parallax-3"
+			style="background-image:url('demo_files/images/vision-min.jpg')">
+			<div class="overlay dark-5">
+				<!-- dark overlay [1 to 9 opacity] -->
+			</div>
+
+			<div class="container">
+
+				<h1>OREGAIN</h1>
+
+				<!-- breadcrumbs -->
+				<!-- <ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Pages</a></li>
+					<li class="active">About Us</li>
+				</ol> -->
+				<!-- /breadcrumbs -->
+
+			</div>
+		</section>
+		<!-- /PAGE HEADER -->
+
+
+
+
+		<!-- -->
+		<section>
+			<div class="container">
+
+				<div class="row">
+
+					<!-- LEFT -->
+					<div class="col-md-9">
+
+						<img class="float-left" src="./about-us-pic.jpg" alt="" />
+
+						<div class="heading-title">
+							<h2>ABOUT HAIRGROW23</h2>
+						</div>
+
+						<p>Hairgro23 is the range of Natural Haircare products for Hair Regrowth, Dandruff Control,
+							Regulating Sebum production & making hair Strong & Healthy.</p>
+						<p>The products treat hair loss effectively by stimulating new hair follicles & strengthening
+							the hair from roots to strands, thus reducing hair fall. They also nourish the scalp with
+							necessary vitamins & minerals.
+						</p>
+						<p>There are about 46 power ingredients that stimulate new hair growth & strengthen the hair.
+							Different combinations are carefully made in each product, to deliver the best results.</p>
+
+					</div>
+					<!-- /LEFT -->
+
+				</div>
+
+				<!-- -->
+				<section>
+					<div class="table-responsive">
+						<table class="table table-bordered table-striped">
+							<thead>
+								<tr>
+									<th style="width: 20%;"><i
+											class="fa-solid fa-swatchbook float-right hidden-xs-down"></i> Ingredient
+									</th>
+									<th><i class="fa-solid fa-vial-circle-check float-right hidden-xs-down"></i> Effect
+										On Hair</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="width: 20%;">Almond</td>
+									<td>Acts as a scalp treatment that softens and strengthens the hair and helps
+										protect your hair from sun damage.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Aloe Vera</td>
+									<td>It repairs dead skin cells on the scalp, promotes hair growth, prevents itching
+										on the scalp, reduces dandruff, and conditions the hair.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Gooseberry (Amla)</td>
+									<td>Treats hair loss effectively, stimulates hair growth, and improves the quality
+										of hair. Considered a miracle cure for hair.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Apple Cider Vinegar</td>
+									<td>Strengthens hair and improves luster</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Argan Oil</td>
+									<td>Argan oil has very high concentrations of vitamins (A, C, and E), antioxidants,
+										linoleic acid, and omega-6 fatty acids, which provide awesome nourishment to our
+										scalp and hair. Moreover, this oil makes the unruly tresses incredibly soft,
+										smooth, and shiny.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Avocado Oil</td>
+									<td>Avocado oil comes packed with mono-saturated fats, proteins, folic acid,
+										vitamins (B , C, E, K, and a little niacin), and minerals (copper, magnesium,
+										potassium, etc.), which strengthen hair follicles, prevent flaky scalp, nourish
+										hair fibers, promote hair growth, moisturize dry hair, detangle hair without
+										making it greasy, and repair damages caused by harsh heat and chemical
+										treatments.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Basil Oil</td>
+									<td>Basil oil is extremely beneficial to speed up hair growth. Massaging basil oil
+										improves scalp circulation, that stimulates hair follicles and promotes the
+										production of new healthy hair all over again.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Beeswax</td>
+									<td>Beeswax locks in moisture, smooths down fly-aways, promotes easier styling, and
+										encourages the growth of new hair. Without leaving a greasy residue, it
+										maintains a firm hold on hairstyles but is easy to wash out.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Black seed Oil (Kalonji)</td>
+									<td>Black seed oil is effective in promoting hair growth. It reduces scalp
+										inflammation, stimulate hair growth and reduces flakiness and sensitivity.
+										However, even if you don't have any scalp conditions, it helps to make hair
+										healthy, soft, hydrated and shiny.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Castor Oil</td>
+									<td>Stimulates hair growth. Castor oil is not only rich in proteins, vitamins, and
+										minerals but also omega 6 and 9 fatty acids, which are essential for the good
+										health of the scalp and the hair fibers. It also has great antibacterial and
+										antifungal properties.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Cayenne</td>
+									<td>Cayenne is a powerful hair loss fighting ingredient. Cayenne has many medical
+										and hair growth applications. It causes stimulation of the scalp by drawing
+										blood to it and increasing the overall circulation.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Cetearyl Alcohol</td>
+									<td>Cetearyl Alcohol has properties that are very beneficial to hair and scalp.
+										Cetearyl Alcohol is hydrating, moisturizing and smoothening. It helps to soften
+										the hair and provide slip to help detangle hair better.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Coconut Oil</td>
+									<td>Stimulates hair growth, promotes scalp health, fights against problems of insect
+										bites, lice, and dandruff. It moisturizes dry hair, adds luster, shine and
+										softness to the hair. It has extreme moisturizing effects, restores both dry
+										hair and scalp, acting as a powerful conditioner for damaged hair.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Egg Protein</td>
+									<td>Egg white contains the highest level of protein along with other minerals like
+										riboflavin, niacin, potassium, magnesium, sodium. All these nutrients assist in
+										boosting hair growth. Benefits of egg white on hair may include regulation of
+										excess oil production while maintaining hair's natural oils as well.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Eucalyptus</td>
+									<td>Eucalyptus oil is known to stimulate hair growth because of its natural
+										nourishing properties that can help soothe and calm the scalp so that
+										healthy-looking hair can shine through.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Flaxseed</td>
+									<td>Flaxseed is a reliable source of B vitamins, makes hair grow stronger and
+										healthier</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Ginger</td>
+									<td>Ginger has been traditionally used in East Asia to prevent hair loss and
+										stimulate hair growth. It has been used for medicinal purposes for centuries. It
+										contains anti-inflammatory properties that help in hair growth.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Glycerin</td>
+									<td>Keeps hair hydrated and healthy.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Grapeseed</td>
+									<td>Grapeseed oil adds moisture, strength, and shine. Try massaging a couple of
+										tablespoons of grapeseed oil (using more or less, depending on the length of
+										your hair) into your hair and scalp before shampooing. Grapeseed oil is used as
+										a natural remedy for baldness.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Green Tea</td>
+									<td>Green tea may prevent hair loss by inhibiting the activity of hormones that
+										induce hair loss and promoting hair regrowth by stimulating hair follicles.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Honey</td>
+									<td>Honey has both emollient and humectant properties, making it a great hair
+										moisturizer. Emollients smooth the hair follicles, adding shine to dull hair.
+										Humectants bond with water molecules, adding moisture to dry strands. By
+										moisturizing and locking in shine, honey can help restore the natural luster of
+										your hair.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Jojoba Oil</td>
+									<td>Jojoba is rich in vitamin C, vitamin B, vitamin E, Copper, and Zinc. It
+										strengthens hair, prevents hair loss and promotes hair thickness.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Lanolin</td>
+									<td>Enhances moisture retention.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Lavender Oil</td>
+									<td>Deep conditions the hair, keeps it shiny, and helps control dandruff.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Lemon</td>
+									<td>Acting as a preservative, also deeply cleanse dandruff, the scalp, hair
+										follicles, and restores healthy pH levels, removes the build-up of product,
+										oils, and pollutants, and also helps to grow hair from even from dormant hair
+										follicles.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Fenugreek Seed (Methi Dana)</td>
+									<td>The most effective remedy to treat hair fall issues. Treats a variety of scalp
+										issues like dryness of hair, dandruff, baldness & hair thinning.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Licorice</td>
+									<td>It prevents hair loss and damage to the hair. It helps soothe the scalp and get
+										rid of any dry flakes/dandruff. Its mollifying properties open pores and is
+										great for the hair shaft.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Moringa</td>
+									<td>It's a powerhouse ingredient to apply to your hair because it has a large
+										variety of rich minerals including zinc (essential for healthy hair production)
+										and antioxidants to help boost keratin production. It helps restore strength,
+										promote hair growth and repair damage.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Mustard</td>
+									<td>Mustard oil may stimulate hair growth by increasing blood circulation in the
+										scalp. It contains protein, a major component of hair, and omega 3 fatty acids.
+										These two nutrients may nourish your hair. The antibacterial and antifungal
+										properties of this oil may prevent scalp infections and hair loss.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Neem</td>
+									<td>Neem, known for its medicinal properties is an effective herb to treat hair
+										loss. Due to its antibacterial, antifungal and anti-inflammatory properties,
+										neem is an excellent way to curb dandruff. It helps the hair follicles to become
+										stronger and also encourages hair growth.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Olive</td>
+									<td>Adds shine, body, softness, and resilience to the hair. Strengthens hair by
+										penetrating the hair shaft and preserving moisture.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Peppermint</td>
+									<td>Increasing circulation with a vasodilator like peppermint could potentially
+										improve hair growth and prevent some hair loss.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Soapberry (Reetha)</td>
+									<td>Controls hair fall by removing dandruff which is the prime cause of hair fall
+										and promotes hair growth.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Turmeric</td>
+									<td>Turmeric can reduce hair loss, adding it to shampoo specifically for thinning
+										hair as well as in thickening conditioner that will improve your hairs health
+										and reduce loss through breakage.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Rice Water</td>
+									<td>Detangles the hair, makes hair smoother, increases shine, makes hair stronger &
+										helps hair grow long.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Rosehip</td>
+									<td>Certain properties in rosehip oil might help increase the strength of your hair,
+										thereby promoting overall growth. These properties include fatty acids,
+										lycopene, and vitamin C.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Rosemary</td>
+									<td>Contains essential fatty acids such as omega-3, omega-6 and omega-9 which
+										promote hair growth. Stimulates hair growth by nourishing, conditioning, and
+										promoting a healthy scalp. The regular massage with warm sesame oil penetrates
+										your scalp, thus increasing the blood circulation.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Acacia concinna (Shikakai)</td>
+									<td>Acts as a hair conditioner cleanses the hair, removes excess oil and dirt, makes
+										hair soft, and detangle it. It strengthens the hair roots and promotes hair
+										growth. It also works against dandruff.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Soy</td>
+									<td>When it comes to retaining the natural moisture of hair naturally, soy oil works
+										the best. It is full of beneficial fatty acids, vitamins, and manganese, which
+										makes even the most unmanageable hair manageable and gorgeous.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Tea tree Oil</td>
+									<td>It has anti-bacterial & anti-fungal benefits. Soothes an itchy scalp, reduces
+										dandruff and flaking, prevents excess oil production, improves blood flow and
+										allows nutrients to reach hair follicles, and stimulates the hair growth cycle
+										to give a head full of strong healthy hair.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Vitamin B</td>
+									<td>Vitamin B5 can also help increase hair growth by supporting and protecting the
+										adrenal glands. It binds the hair follicles and coats and seals in moisture
+										which is great for dry hair or to prevent dry hair and scalp.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Vitamin B12</td>
+									<td>Promotes healthy hair growth by assisting in the production of oxygen-rich red
+										blood cells, which feed hair follicles. It also reverses the process of greying.
+									</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Vitamin B5</td>
+									<td>Increases hair growth by supporting and protecting the adrenal glands.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Vitamin E</td>
+									<td>Support a healthy scalp and hair as it has natural antioxidant effects that
+										assist hair growth.</td>
+								</tr>
+								<tr>
+									<td style="width: 20%;">Xanthan Gum</td>
+									<td>It is a stabilizer, thickener, binder, and skin-conditioning agent.</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</section>
+				<!-- / -->
+			</div>
+
+		</section>
+		<!-- / -->
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-md-3">
+						<!-- Footer Logo -->
+						<img class="footer-logo" src="assets/images/_smarty/logo-oregain-light.png" alt="" />
+
+						<!-- Small Description -->
+						<p><em>"Stronger, healthier hair starts with nourishing the roots."</em></p>
+
+						<!-- Contact Address -->
+						<address>
+							<ul class="list-unstyled">
+								<li class="footer-sprite address">
+									Islamabad, Pakistan.
+								</li>
+								<li class="footer-sprite phone">
+									Phone: +92-111-000-459
+								</li>
+								<li class="footer-sprite email">
+									<a href="mailto:support@yourname.com">info@oregain.pk</a>
+								</li>
+							</ul>
+						</address>
+						<!-- /Contact Address -->
+
+					</div>
+
+					<div class="col-md-3">
+
+						<!-- Latest Blog Post -->
+						<h4 class="letter-spacing-1">PRODUCTS</h4>
+						<ul class="footer-posts list-unstyled">
+							<li>
+								<a href="#">Hairgro23 Shampoo</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Oil</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+							<li>
+								<a href="#">Hairgro23 Serum</a>
+								<!-- <small>29 June 2017</small> -->
+							</li>
+						</ul>
+						<!-- /Latest Blog Post -->
+
+					</div>
+
+					<div class="col-md-2">
+
+						<!-- Links -->
+						<h4 class="letter-spacing-1">EXPLORE OREGAIN</h4>
+						<ul class="footer-links list-unstyled">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="page-haircare-basics.html">Haircare Basics</a></li>
+							<li><a href="page-our-story.html">Oregain - Our Story</a></li>
+							<li><a href="page-about-us.html">About Hairgro23</a></li>
+							<li><a href="#">Return & Refund</a></li>
+							<li><a href="page-faq.html">FAQ's</a></li>
+							<li><a href="page-contact.html">Contact Us</a></li>
+						</ul>
+						<!-- /Links -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Newsletter Form -->
+						<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+						<!-- <p>Subscribe to Our Newsletter to get Important News &amp; Offers</p>
+	
+							<form class="validate" action="php/newsletter.php" method="post"
+								data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required"
+										placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-success" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form> -->
+						<!-- /Newsletter Form -->
+
+						<!-- Social Icons -->
+						<div class="mt-20">
+
+							<a href="#" class="social-icon social-icon-border social-facebook float-left"
+								data-toggle="tooltip" data-placement="top" title="Facebook">
+
+								<i class="fa-brands fa-facebook-f"></i>
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-gplus float-left"
+								data-toggle="tooltip" data-placement="top" title="Instagram">
+								<i class="fa-brands fa-instagram"></i>
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+
+							<a href="#" class="social-icon social-icon-border social-linkedin float-left"
+								data-toggle="tooltip" data-placement="top" title="Whatsapp">
+								<i class="fa-brands fa-whatsapp"></i>
+								<i class="fa-brands fa-whatsapp"></i>
+							</a>
+
+						</div>
+						<!-- /Social Icons -->
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<div class="need-help-online">
+						<p>Need help? Call us at <b><u style="cursor: pointer;">+923-111-000-459</u></b> or write to us
+							<b><u style="cursor: pointer;"><a
+										href="mailto:support@yourname.com">info@oregain.pk</a></u></b>
+							<br>
+							Online prices and selection generally match our retail store, but may vary. Prices and
+							offers are subject to change.
+						</p>
+					</div>
+					<ul class="float-right m-0 list-inline mobile-block">
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li>&bull;</li>
+						<li><a href="#">Privacy</a></li>
+					</ul>
+					&copy; All Rights Reserved, Company LTD
+				</div>
+			</div>
+		</footer>
+		<!-- /FOOTER -->
+
+	</div>
+	<!-- /wrapper -->
+
+	<!-- SCROLL TO TOP -->
+	<a href="#" id="toTop"></a>
+
+
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="inner">
+			<span class="loader"></span>
+		</div>
+	</div><!-- /PRELOADER -->
+
+
+	<!-- JAVASCRIPT FILES -->
+	<script>var plugin_path = 'assets/plugins/';</script>
+	<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+	<script src="assets/js/scripts.js"></script>
+
+	<!-- STYLESWITCHER - REMOVE -->
+	<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+</body>
+
+</html>
