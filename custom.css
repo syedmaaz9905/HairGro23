@@ -24,11 +24,54 @@
     font-size: 0.9rem;
 }
 
-.solutions-hairgrow{
+.solutions-hairgrow {
     display: flex;
     justify-content: center;
 }
 
 .container .row .col-md-4 {
     padding-left: 1rem;
+}
+
+.cart-remove {
+    animation: fadeOut 0.5s ease forwards;
+}
+
+/* .remove_item {
+    display: inline-block;
+    color: #999;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+    z-index: 999999999999999;
+}
+
+.remove_item:hover {
+    color: #ff0000;
+} */
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+@media(max-width:568px) {
+    .shrds {
+        display: none;
+    }
+
+    .startShoppingButton {
+        top: 130px !important;
+    }
+
+    .thickerFullerHealthier {
+        display: none;
+    }
 }
