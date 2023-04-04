@@ -121,7 +121,7 @@
 
 				<!-- right -->
 				<ul class="top-links list-inline float-right">
-					<li class="text-welcome hidden-xs-down">Welcome to Oregain - HairGrow, <strong>John Doe</strong>
+					<li class="text-welcome hidden-xs-down">Welcome to Oregain - HairGrow, <strong>xyz</strong>
 					</li>
 					<li>
 						<a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><i
@@ -383,9 +383,12 @@
 				<div class="card card-default">
 					<div class="card-block">
 						<strong>You are not logged in!</strong>
-						Please, <a href="page-login-1.html">login</a> or <a href="javascript:;"
+						Please, <a href="page-login.html">login</a> or
+						<!-- <a href="javascript:;"
 							onclick="jQuery('#accountswitch').trigger('click'); _scrollTo('#newaccount', 200);">create
-							an account</a> for later use.
+							an account</a>  -->
+						<a href="page-register.html">create an account</a>
+						for later use.
 					</div>
 				</div>
 				<!-- /NOT LOGGED IN -->
@@ -488,20 +491,20 @@
 								</div>
 							</div>
 
-							<hr />
+							<!-- <hr />
 
 							<div class="row">
 
 								<div class="col-lg-12 m-0 clearfix">
 									<label class="checkbox float-left">
-										<!-- see assets/js/view/demo.shop.js - CHECKOUT section -->
+										
 										<input id="shipswitch" name="shipping[same_as_billing]" type="checkbox"
 											value="1" checked="checked" />
 										<i></i> <span class="fw-300">Ship to the same address</span>
 									</label>
 								</div>
 
-							</div>
+							</div> -->
 
 						</fieldset>
 						<!-- /BILLING -->
@@ -623,13 +626,13 @@
 													<i></i> <span class="fw-300">Check / Money order</span>
 												</label>
 											</div>
-											<div class="col-lg-12 m-0 clearfix">
+											<!-- <div class="col-lg-12 m-0 clearfix">
 												<label class="radio float-left">
 													<input id="payment_card" name="payment[method]" type="radio"
 														value="2" />
 													<i></i> <span class="fw-300">Credit Card</span>
 												</label>
-											</div>
+											</div> -->
 										</div>
 
 									</div>
@@ -766,28 +769,31 @@
 
 									<hr />
 
-									<button class="btn btn-primary btn-lg btn-block fs-15"><i
-											class="fa fa-mail-forward"></i> Place Order Now</button>
+									<!-- <button class="btn btn-primary btn-lg btn-block fs-15"><i
+											class="fa fa-mail-forward"></i> Place Order Now</button> -->
+									<a href="#" class="btn btn-3d btn-green" onclick="openPopup()"><i class="fa-solid fa-share"></i>Place Order Now</a>
 								</div>
 							</div>
 						</div>
+
+
 						<!-- /TOTAL / PLACE ORDER -->
 
 						<!-- CREATE ACCOUNT -->
-						<div class="toggle-transparent toggle-bordered-full mt-30 clearfix">
+						<!-- <div class="toggle-transparent toggle-bordered-full mt-30 clearfix">
 							<div class="toggle active">
-								<div class="toggle-content">
+								<div class="toggle-content"> -->
 
-									<div class="clearfix">
+									<!-- <div class="clearfix">
 										<label class="checkbox float-left">
 											<input id="accountswitch" name="create-account[yes]" type="checkbox"
 												value="1" />
 											<i></i> <span class="fw-300">Create an account for later use</span>
 										</label>
-									</div>
+									</div> -->
 
 									<!-- CREATE ACCOUNT FORM -->
-									<div id="newaccount" class="mt-10 mb-30 hide">
+									<!-- <div id="newaccount" class="mt-10 mb-30 hide">
 
 										<div class="row mb-0">
 											<div class="col-md-6 col-sm-6">
@@ -803,13 +809,13 @@
 										</div>
 										<small class="text-warning">NOTE: Email address will be used to login</small>
 
-									</div>
+									</div> -->
 									<!-- /CREATE ACCOUNT FORM -->
 
 
-								</div>
+								<!-- </div>
 							</div>
-						</div>
+						</div> -->
 						<!-- /CREATE ACCOUNT -->
 
 				</form>
@@ -819,7 +825,15 @@
 		</section>
 		<!-- /CART -->
 
-
+		<div class="popup" id="popup">
+			<img src="./success.gif">
+			<div class="cdsp">
+				<div class="cdspContainer">
+					<h2>Order Has Been Placed</h2>
+				</div>
+			</div>
+			<button class="buttonPopup" onclick="closePopup()">Okay</button>
+		</div>
 
 
 
@@ -992,6 +1006,17 @@
 
 	<!-- PAGE LEVEL SCRIPTS -->
 	<script src="assets/js/view/demo.shop.js"></script>
+
+	<!-- POPUP MODAL -->
+	<script>
+		let popup = document.getElementById('popup');
+		function openPopup() {
+			popup.classList.add("open-popup");
+		}
+		function closePopup() {
+			popup.classList.remove("open-popup");
+		}
+	</script>
 </body>
 
 </html>
